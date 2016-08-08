@@ -4,13 +4,9 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-
-import com.reporty.reporty.R;
 
 /**
- * Created by saharh on 28/07/2015.
+ * Created by Shahar Barsheshet on 24/09/2015.
  */
 public class DialogUtils {
 
@@ -103,9 +99,20 @@ public class DialogUtils {
      * @return the SlertDialog
      */
     public static AlertDialog createOkDialog(final Activity activity, final String title, final String text, final DialogInterface.OnClickListener okListener) {
-        AlertDialog dialog = new AlertDialog.Builder(activity).setTitle(title).setMessage(text).setPositiveButton(R.string.ok, okListener).create();
+        AlertDialog dialog = new AlertDialog.Builder(activity).setTitle(title).setMessage(text).setPositiveButton(android.R.string.ok, okListener).create();
         dialog.setOwnerActivity(activity);
         return dialog;
+    }
+
+    /**
+     * dismiss dialog safely
+     *
+     * @param dialog - dialog to dismiss
+     */
+    public static void dismissDialogSafely(Dialog dialog) {
+        if (dialog != null && dialog.isShowing()) {
+            dialog.dismiss();
+        }
     }
 
     // helper to run on the UI thread
@@ -122,14 +129,4 @@ public class DialogUtils {
         });
     }
 
-    /**
-     * dismiss dialog safely
-     *
-     * @param dialog - dialog to dismiss
-     */
-    public static void dismissDialogSafely(Dialog dialog) {
-        if (dialog != null && dialog.isShowing()) {
-            dialog.dismiss();
-        }
-    }
 }
