@@ -8,7 +8,16 @@ import java.nio.channels.FileChannel;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+/***********
+ * Android Utils
+ * Created by Shahar Barsheshet on 20/01/2016.
+ * bytesizebit@gmail.com
+ * www.bytesizebit.com
+ ***********/
 public class EncryptionUtils {
+
+    private EncryptionUtils() {
+    }
 
     /**
      * create MD5 String from string

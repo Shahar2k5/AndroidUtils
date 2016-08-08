@@ -6,16 +6,20 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
-/**
- * Created by Shahar Barsheshet on 24/09/2015.
- */ 
+/***********
+ * Android Utils
+ * Created by Shahar Barsheshet on 17/10/2015.
+ * bytesizebit@gmail.com
+ * www.bytesizebit.com
+ ***********/
 public class KeyboardUtils {
 
     private KeyboardUtils() {
-        throw new UnsupportedOperationException("u can't fuck me...");
     }
 
-
+    /**
+     * hide soft keyboard
+     */
     public static void hideSoftKeyboard(Activity activity) {
         View view = activity.getWindow().peekDecorView();
         if (view != null) {
@@ -25,6 +29,9 @@ public class KeyboardUtils {
         }
     }
 
+    /**
+     * hide soft keyboard
+     */
     public static void hideSoftKeyboard(Context context, View view) {
         view.clearFocus();
         InputMethodManager inputmanger = (InputMethodManager) context
@@ -32,10 +39,16 @@ public class KeyboardUtils {
         inputmanger.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
 
+    /**
+     * show soft keyboard
+     */
     public static void showSoftKeyboard(Activity activity) {
         showSoftKeyboard(activity, null);
     }
 
+    /**
+     * show soft keyboard
+     */
     public static void showSoftKeyboard(Context context, View view) {
         view.setFocusable(true);
         view.setFocusableInTouchMode(true);
@@ -45,7 +58,9 @@ public class KeyboardUtils {
         inputManager.showSoftInput(view, 0);
     }
 
-
+    /**
+     * toggle soft keyboard state
+     */
     public static void toggleKeyboradState(Context context, EditText edit) {
         edit.setFocusable(true);
         edit.setFocusableInTouchMode(true);

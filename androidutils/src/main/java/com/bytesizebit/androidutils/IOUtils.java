@@ -6,10 +6,17 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-/**
- * Created by Shahar Barsheshet on 24/09/2015.
- */
+/***********
+ * Android Utils
+ * Created by Shahar Barsheshet on 17/10/2015.
+ * bytesizebit@gmail.com
+ * www.bytesizebit.com
+ ***********/
 public class IOUtils {
+
+    private IOUtils() {
+    }
+
     /**
      * save a Bitmap to a local file
      *

@@ -5,11 +5,16 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
 
-/**
- * Created by Shahar Barsheshet on 24/09/2015.
- */
+/***********
+ * Android Utils
+ * Created by Shahar Barsheshet on 17/10/2015.
+ * bytesizebit@gmail.com
+ * www.bytesizebit.com
+ ***********/
 public class DialogUtils {
 
+    private DialogUtils() {
+    }
 
     /**
      * show an Alert Dialog with one button

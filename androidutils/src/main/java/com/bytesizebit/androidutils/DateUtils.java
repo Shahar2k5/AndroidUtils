@@ -9,10 +9,17 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-/**
- * Created by Shahar Barsheshet on 24/09/2015.
- */
+/***********
+ * Android Utils
+ * Created by Shahar Barsheshet on 18/03/2015.
+ * bytesizebit@gmail.com
+ * www.bytesizebit.com
+ ***********/
 public class DateUtils {
+
+    private DateUtils() {
+    }
+
     @SuppressLint("SimpleDateFormat")
     public static final SimpleDateFormat SIMPLE_DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 

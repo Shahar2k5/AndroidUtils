@@ -14,13 +14,19 @@ import android.support.annotation.Nullable;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-/**
- * Created by Shahar Barsheshet on 24/09/2015.
- */
+/***********
+ * Android Utils
+ * Created by Shahar Barsheshet on 22/11/2015.
+ * bytesizebit@gmail.com
+ * www.bytesizebit.com
+ ***********/
 public class ImageUtils {
+
+    private ImageUtils() {
+    }
+
     private static final int MAX_BITMAP_WIDTH = 640;
     private static final int MAX_BITMAP_HEIGHT = 640;
-
 
     /**
      * create a Bitmap from URI
@@ -69,8 +75,19 @@ public class ImageUtils {
      * @return
      */
     public static Bitmap normalize(Context context, Uri selectedImage) {
+        return normalize(context, selectedImage, MAX_BITMAP_WIDTH, MAX_BITMAP_HEIGHT);
+    }
+
+    /**
+     * normlize a bitmap
+     *
+     * @param context       - the context
+     * @param selectedImage - uri for the selected image
+     * @return
+     */
+    public static Bitmap normalize(Context context, Uri selectedImage, int maxWidth, int maxHeight) {
         Bitmap bm;
-        bm = getImageResized(context, selectedImage);
+        bm = getImageResized(context, selectedImage, maxWidth, maxHeight);
         bm = getImageRotatedByMetadata(context, bm, selectedImage);
         return bm;
     }
@@ -135,7 +152,7 @@ public class ImageUtils {
     }
 
     // helper for normalizing image size
-    private static Bitmap decodeBitmapWithClosestSampleSize(Context context, Uri theUri) {
+    private static Bitmap decodeBitmapWithClosestSampleSize(Context context, Uri theUri, int maxWidth, int maxHeight) {
         BitmapFactory.Options options = new BitmapFactory.Options();
 
         AssetFileDescriptor fileDescriptor;
@@ -149,7 +166,7 @@ public class ImageUtils {
         options.inJustDecodeBounds = true;
         BitmapFactory.decodeFileDescriptor(fileDescriptor.getFileDescriptor(), null, options);
 
-        options.inSampleSize = calculateInSampleSize(options, MAX_BITMAP_WIDTH, MAX_BITMAP_HEIGHT);
+        options.inSampleSize = calculateInSampleSize(options, maxWidth, maxHeight);
 
         options.inJustDecodeBounds = false;
 
@@ -158,9 +175,9 @@ public class ImageUtils {
 
 
     // helper for normalizing image size
-    private static Bitmap getImageResized(Context context, Uri selectedImage) {
-        Bitmap bm = decodeBitmapWithClosestSampleSize(context, selectedImage);
-        Bitmap resizedBmp = Bitmap.createScaledBitmap(bm, MAX_BITMAP_WIDTH, MAX_BITMAP_HEIGHT, true);
+    private static Bitmap getImageResized(Context context, Uri selectedImage, int maxWidth, int maxHeight) {
+        Bitmap bm = decodeBitmapWithClosestSampleSize(context, selectedImage, maxWidth, maxHeight);
+        Bitmap resizedBmp = Bitmap.createScaledBitmap(bm, maxWidth, maxHeight, true);
         if (resizedBmp != bm) {
             bm.recycle();
         }
