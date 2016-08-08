@@ -5,7 +5,11 @@ import android.content.res.AssetFileDescriptor;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
 import android.graphics.Matrix;
+import android.graphics.Paint;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffXfermode;
 import android.media.ExifInterface;
 import android.net.Uri;
 import android.provider.MediaStore;
@@ -151,6 +155,31 @@ public class ImageUtils {
         return bitmap;
     }
 
+
+    /**
+     * create a fullscreen image and punch a hole inside
+     *
+     * @param context         - some context
+     * @param screenWidth     - the screen width
+     * @param screenHeight    - the screen height
+     * @param x               - x coordinate of the hole
+     * @param y               - y coordinate of the hole
+     * @param holeDiameter    - hole width
+     * @param backgroundColor - the background color to use
+     * @return
+     */
+    public static Bitmap punchARoundedHoleInABitmap(Context context, int screenWidth, int screenHeight, int x, int y, int holeDiameter, int backgroundColor) {
+        Bitmap bitmap = Bitmap.createBitmap(screenWidth, screenHeight, Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(bitmap);
+        Paint paint = new Paint();
+        paint.setAntiAlias(true);
+        canvas.drawColor(context.getResources().getColor(backgroundColor));
+        paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.CLEAR));
+        canvas.drawCircle(x + holeDiameter / 2, y + holeDiameter / 2, holeDiameter / 2, paint);
+        return bitmap;
+    }
+
+
     // helper for normalizing image size
     private static Bitmap decodeBitmapWithClosestSampleSize(Context context, Uri theUri, int maxWidth, int maxHeight) {
         BitmapFactory.Options options = new BitmapFactory.Options();
@@ -172,7 +201,6 @@ public class ImageUtils {
 
         return BitmapFactory.decodeFileDescriptor(fileDescriptor.getFileDescriptor(), null, options);
     }
-
 
     // helper for normalizing image size
     private static Bitmap getImageResized(Context context, Uri selectedImage, int maxWidth, int maxHeight) {
