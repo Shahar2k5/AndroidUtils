@@ -1,25 +1,13 @@
 package com.bytesizebit.androidutils;
 
-import android.app.Activity;
-import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.Canvas;
-import android.graphics.Paint;
-import android.graphics.Point;
-import android.graphics.PorterDuff;
-import android.graphics.PorterDuffXfermode;
-import android.graphics.Rect;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.SpannedString;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
 import android.text.style.UnderlineSpan;
-import android.view.Display;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.ListView;
 import android.widget.TextView;
 
