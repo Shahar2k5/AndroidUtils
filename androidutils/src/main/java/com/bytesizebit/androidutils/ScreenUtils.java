@@ -95,7 +95,7 @@ public class ScreenUtils {
      * check if we have status bar
      *
      * @param activity - some activity
-     * @return true if we have status bar
+     * @return {@code true} if we have status bar
      */
     public static boolean hasStatusBar(Activity activity) {
         LayoutParams params = activity.getWindow().getAttributes();
@@ -157,7 +157,7 @@ public class ScreenUtils {
      * check if the screen is locked
      *
      * @param context - some context
-     * @return true if the screen is lock
+     * @return {@code true} if the screen is lock
      */
     public static boolean isScreenLocked(Context context) {
         KeyguardManager km = (KeyguardManager) context

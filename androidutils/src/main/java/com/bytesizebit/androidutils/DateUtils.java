@@ -34,7 +34,7 @@ public class DateUtils {
      *
      * @param context - some context
      * @param date    - date to format
-     * @return String formmated date
+     * @return {@code String} formatted date
      */
     public static String formatDateLong(Context context, Date date) {
         DateFormat dateFormat = android.text.format.DateFormat.getLongDateFormat(context);
@@ -45,7 +45,7 @@ public class DateUtils {
      * check if the date is less than 7 days
      *
      * @param date - date to check
-     * @return true if the date is less than 7 days
+     * @return {@code true} if the date is less than 7 days
      */
     private static boolean isLessThanOneWeek(Date date) {
         Calendar calendar = Calendar.getInstance();
@@ -57,7 +57,7 @@ public class DateUtils {
      * check if the current date is today
      *
      * @param date - date to check
-     * @return true if the date is today
+     * @return {@code true} if the date is today
      */
     public static boolean isToday(Date date) {
         return android.text.format.DateUtils.isToday(date.getTime());
@@ -67,7 +67,7 @@ public class DateUtils {
      * Is the specific date yasterday
      *
      * @param date - date to check
-     * @return true if the date is yesterday
+     * @return {@code true} if the date is yesterday
      */
     public static boolean isYesterday(Date date) {
         Calendar calendar = Calendar.getInstance();
@@ -90,7 +90,7 @@ public class DateUtils {
      * check for a leap year
      *
      * @param year - the year to check
-     * @return true for a leap year
+     * @return {@code true} for a leap year
      */
     public static boolean isLeapYear(int year) {
         return year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
@@ -158,7 +158,7 @@ public class DateUtils {
      *
      * @param formattedDate - string to convert
      * @param dateFormat    -
-     * @return
+     * @return {@code Date} Date object from the string value
      */
     public static Date stringToDate(String formattedDate, SimpleDateFormat dateFormat) {
         return new Date(stringToMilliseconds(formattedDate, dateFormat));
@@ -314,7 +314,7 @@ public class DateUtils {
      * @param dateString2 - second date
      * @param timeUnit    - time unit to get the result
      * @param dateFormat  - the format used in the dates
-     * @return
+     * @return {@code long} the time interval between two dates
      */
     public static long getTimeIntervalBetweenDates(String dateString1, String dateString2, int timeUnit, SimpleDateFormat dateFormat) {
         return millisecondsToTimeUnit(stringToMilliseconds(dateString1, dateFormat)
@@ -327,7 +327,7 @@ public class DateUtils {
      * @param date1    - first date
      * @param date2    - second date
      * @param timeUnit - time unit to get the result
-     * @return
+     * @return {@code long} the time interval between two dates
      */
     public static long getTimeIntervalBetweenDates(Date date1, Date date2, int timeUnit) {
         return millisecondsToTimeUnit(dateToMilliseconds(date2) - dateToMilliseconds(date1), timeUnit);

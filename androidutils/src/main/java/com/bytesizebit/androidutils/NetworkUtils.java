@@ -21,7 +21,7 @@ public class NetworkUtils {
      * check if there is an active network
      *
      * @param context - the context
-     * @return true for active network
+     * @return {@code true} for active network
      */
     public static boolean isNetworkAvailable(Context context) {
         ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -69,7 +69,7 @@ public class NetworkUtils {
      * check if connected to cellular provider
      *
      * @param networkType - the network type
-     * @return true if connected to cellular provider
+     * @return {@code true} if connected to cellular provider
      */
     public static boolean isNetworkTypeCellular(String networkType) {
         return networkType.equals("MOBILE");
@@ -81,7 +81,7 @@ public class NetworkUtils {
      * @param context                - the context
      * @param prevConnectivityType   - previous network type
      * @param mPrevConnectionSubType - previous network sub type
-     * @return true if network changed
+     * @return {@code true} if network changed
      */
     public static boolean isNetworkChanged(Context context, String prevConnectivityType, String mPrevConnectionSubType) {
         String connectivityType = getNetworkType(context);
@@ -115,7 +115,7 @@ public class NetworkUtils {
      * check if we have a WiFi connection
      *
      * @param context - the context
-     * @return true if connected to WiFi
+     * @return {@code true} if connected to WiFi
      */
     public static boolean isWifiConnected(Context context) {
         ConnectivityManager cm = (ConnectivityManager) context

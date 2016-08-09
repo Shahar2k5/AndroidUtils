@@ -76,7 +76,7 @@ public class ImageUtils {
      *
      * @param context       - the context
      * @param selectedImage - uri for the selected image
-     * @return
+     * @return {@code Bitmap} from the selected uri image
      */
     public static Bitmap normalize(Context context, Uri selectedImage) {
         return normalize(context, selectedImage, MAX_BITMAP_WIDTH, MAX_BITMAP_HEIGHT);

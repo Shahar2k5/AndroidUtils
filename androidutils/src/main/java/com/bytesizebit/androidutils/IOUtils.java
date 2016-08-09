@@ -45,7 +45,7 @@ public class IOUtils {
      * deletes a selected directory recursively
      *
      * @param dir - the directory to delete
-     * @return true is deleted successfully
+     * @return {@code true} is deleted successfully
      */
     public static boolean deleteDir(File dir) {
         if (dir == null) {

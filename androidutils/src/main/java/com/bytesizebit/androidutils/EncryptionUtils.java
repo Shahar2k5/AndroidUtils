@@ -85,7 +85,7 @@ public class EncryptionUtils {
      * create a MD5 String from file path
      *
      * @param filePath - path to a file
-     * @return
+     * @return {@code String} MD5 string
      */
     public static String getMD5File(String filePath) {
         return getMD5File(new File(filePath));

@@ -132,7 +132,7 @@ public class IntentUtils {
      *
      * @param context - the context
      * @param intent  - the intent to test
-     * @return true if Activity exists for that Intent
+     * @return {@code true} if Activity exists for that Intent
      */
     public static boolean isActivityAvailableForIntent(Context context, Intent intent) {
         return intent.resolveActivity(context.getPackageManager()) != null;
@@ -157,7 +157,7 @@ public class IntentUtils {
      *
      * @param className - service class name
      * @param context   - some context
-     * @return true if service is running
+     * @return {@code true} if service is running
      */
     public static boolean isRunningService(String className, Context context) {
         ActivityManager activityManager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);

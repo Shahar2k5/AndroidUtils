@@ -67,7 +67,7 @@ public class StringUtils {
      * check if a string is empty
      *
      * @param str - string to check
-     * @return true if empty
+     * @return {@code true} if empty
      */
     public static boolean isEmpty(CharSequence str) {
         return TextUtils.isEmpty(str);
@@ -77,7 +77,7 @@ public class StringUtils {
      * check if a string is NOT empty
      *
      * @param str - string to check
-     * @return true if NOT empty
+     * @return {@code true} if NOT empty
      */
     public static boolean isNotEmpty(CharSequence str) {
         return !isEmpty(str);
