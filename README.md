@@ -3,15 +3,19 @@ Lots of Android utils every project should have
 
 ## Usage
 
-Just add the dependency
+#### Gradle
 
-``` bash
-dependencies {
-            ...
-	        compile 'com.github.shahar2k5:androidutils:1.0.0'
-	}
+`compile 'com.github.shahar2k5:androidutils:1.0.0'`
 
+#### Maven
 ```
+<dependency>
+    <groupId>com.github.shahar2k5</groupId>
+    <artifactId>androidutils</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
+
 ## API
 
 #### » [DateUtils](androidutils/src/main/java/com/bytesizebit/androidutils/DateUtils.java)
