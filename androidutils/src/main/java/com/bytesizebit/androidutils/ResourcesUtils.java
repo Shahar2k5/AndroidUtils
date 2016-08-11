@@ -13,8 +13,8 @@ public class ResourcesUtils {
     /**
      * load resource id by name
      *
-     * @param resName - the name of the resource
-     * @param c       - some clazz
+     * @param resName the name of the resource
+     * @param c       some clazz
      * @return the id of the resource
      */
     public static int getResIdFromString(CharSequence resName, Class<?> c) {

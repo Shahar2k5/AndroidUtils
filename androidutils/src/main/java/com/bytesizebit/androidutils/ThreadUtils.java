@@ -17,7 +17,7 @@ public class ThreadUtils {
     /**
      * makes the thread sleep for some time
      *
-     * @param millis - time to sleep in millis
+     * @param millis time to sleep in millis
      */
     public static void threadSleep(long millis) {
         try {
@@ -28,7 +28,7 @@ public class ThreadUtils {
     }
 
     /**
-     * check if running on main thread
+     * Check if running on main thread
      */
     public static void checkUiThread() {
         if (Looper.getMainLooper() != Looper.myLooper()) {

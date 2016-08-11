@@ -18,10 +18,10 @@ public class IOUtils {
     }
 
     /**
-     * save a Bitmap to a local file
+     * Save a Bitmap to a local file
      *
-     * @param bmp                  - the Bitmap to save
-     * @param fullPathWithFileName - path and file name
+     * @param bmp                   the Bitmap to save
+     * @param fullPathWithFileName  path and file name
      * @throws IOException
      */
     public static void saveBitmapToFile(Bitmap bmp, String fullPathWithFileName) throws IOException {
@@ -42,9 +42,9 @@ public class IOUtils {
     }
 
     /**
-     * deletes a selected directory recursively
+     * Delete a selected directory recursively
      *
-     * @param dir - the directory to delete
+     * @param dir  the directory to delete
      * @return {@code true} is deleted successfully
      */
     public static boolean deleteDir(File dir) {
@@ -64,9 +64,9 @@ public class IOUtils {
     }
 
     /**
-     * create a directory if needed
+     * Create a directory if needed
      *
-     * @param filePath - the path to the directory
+     * @param filePath  the path to the directory
      * @return File of the create directory
      */
     public static File createParentDirIfNotExists(String filePath) {

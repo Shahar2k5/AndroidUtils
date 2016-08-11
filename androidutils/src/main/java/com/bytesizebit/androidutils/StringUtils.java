@@ -64,9 +64,9 @@ public class StringUtils {
     }
 
     /**
-     * check if a string is empty
+     * Check if a string is empty
      *
-     * @param str - string to check
+     * @param str  string to check
      * @return {@code true} if empty
      */
     public static boolean isEmpty(CharSequence str) {
@@ -74,9 +74,9 @@ public class StringUtils {
     }
 
     /**
-     * check if a string is NOT empty
+     * Check if a string is NOT empty
      *
-     * @param str - string to check
+     * @param str  string to check
      * @return {@code true} if NOT empty
      */
     public static boolean isNotEmpty(CharSequence str) {
@@ -86,7 +86,7 @@ public class StringUtils {
     /**
      * capital only first letter
      *
-     * @param original - the string to change
+     * @param original  the string to change
      * @return a String with first capital letter
      */
     public static String capitalizeFirstLetter(String original) {
@@ -97,9 +97,9 @@ public class StringUtils {
     }
 
     /**
-     * create a String from stacktrace
+     * Create a String from stacktrace
      *
-     * @param ex - the exception
+     * @param ex  the exception
      * @return a String generated from exception's stacktrace
      */
     public static String exceptionStackTraceToString(Exception ex) {
@@ -109,10 +109,10 @@ public class StringUtils {
     }
 
     /**
-     * get initials from a string
+     * Get initials from a string
      *
-     * @param string    - string to get initials from
-     * @param maxLength - max number of initials
+     * @param string     string to get initials from
+     * @param maxLength  max number of initials
      * @return a String with words initials
      */
     @NonNull

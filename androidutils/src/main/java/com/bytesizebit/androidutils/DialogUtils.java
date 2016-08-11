@@ -17,13 +17,13 @@ public class DialogUtils {
     }
 
     /**
-     * show an Alert Dialog with one button
+     * Show an Alert Dialog with one button
      *
-     * @param activity       - the context
-     * @param title          - dialog title
-     * @param text           - dialog message
-     * @param buttonText     - text to appear in the dialog button
-     * @param buttonListener - button onClick callback
+     * @param activity       the context
+     * @param title          dialog title
+     * @param text           dialog message
+     * @param buttonText     text to appear in the dialog button
+     * @param buttonListener button onClick callback
      * @return the AlertDialog
      */
     public static AlertDialog showOneButtonsDialog(
@@ -38,15 +38,15 @@ public class DialogUtils {
     }
 
     /**
-     * show an Alert Dialog with two buttons
+     * Show an Alert Dialog with two buttons
      *
-     * @param activity               - the context
-     * @param title                  - dialog title
-     * @param text                   - dialog message
-     * @param negativeButtonText     - negative text
-     * @param leftButtonListener     - negative button callback
-     * @param positiveButtonText     - positive button text
-     * @param positiveButtonListener - positive button text
+     * @param activity               the context
+     * @param title                  dialog title
+     * @param text                   dialog message
+     * @param negativeButtonText     negative text
+     * @param leftButtonListener     negative button callback
+     * @param positiveButtonText     positive button text
+     * @param positiveButtonListener positive button text
      * @return the AlertDialog
      */
     public static AlertDialog showTwoButtonsDialog(
@@ -66,10 +66,10 @@ public class DialogUtils {
     /**
      * Displays a dialog box with an OK button
      *
-     * @param activity   - the context
-     * @param title      - dialog title
-     * @param text       - dialog message
-     * @param okListener - button callback
+     * @param activity   the context
+     * @param title      dialog title
+     * @param text       dialog message
+     * @param okListener button callback
      */
     public static void showOkDialog(final Activity activity, final String title, final String text, final DialogInterface.OnClickListener okListener) {
         if (activity == null || activity.isFinishing()) {
@@ -86,9 +86,9 @@ public class DialogUtils {
     /**
      * Displays a dialog box with an OK button
      *
-     * @param activity - the context
-     * @param title    - dialog title
-     * @param text     - dialog message
+     * @param activity the context
+     * @param title    dialog title
+     * @param text     dialog message
      */
     public static void showOkDialog(final Activity activity, final String title, final String text) {
         showOkDialog(activity, title, text, null);
@@ -97,10 +97,10 @@ public class DialogUtils {
     /**
      * Displays a dialog box with an OK button
      *
-     * @param activity   - the context
-     * @param title      - dialog title
-     * @param text       - dialog message
-     * @param okListener - button callback
+     * @param activity   the context
+     * @param title      dialog title
+     * @param text       dialog message
+     * @param okListener button callback
      * @return the SlertDialog
      */
     public static AlertDialog createOkDialog(final Activity activity, final String title, final String text, final DialogInterface.OnClickListener okListener) {
@@ -110,9 +110,9 @@ public class DialogUtils {
     }
 
     /**
-     * dismiss dialog safely
+     * Dismiss dialog safely
      *
-     * @param dialog - dialog to dismiss
+     * @param dialog dialog to dismiss
      */
     public static void dismissDialogSafely(Dialog dialog) {
         if (dialog != null && dialog.isShowing()) {

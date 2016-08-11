@@ -14,10 +14,10 @@ public class JavaUtils {
     }
 
     /**
-     * get the index of an object
+     * Get the index of an object
      *
-     * @param array        - the items
-     * @param objectToFind - the object
+     * @param array        the items
+     * @param objectToFind the object
      * @return the index of the object or -1 if not found
      */
     public static int indexOf(Object[] array, Object objectToFind) {
@@ -34,9 +34,9 @@ public class JavaUtils {
     }
 
     /**
-     * create a Integer arrayList from String arrayList
+     * Create a Integer arrayList from String arrayList
      *
-     * @param arrayList - source array
+     * @param arrayList source array
      * @return Integer arrayList
      */
     public static ArrayList<Integer> convertStringArrayToIntegerArray(List<String> arrayList) {
@@ -48,11 +48,11 @@ public class JavaUtils {
     }
 
     /**
-     * check if object if null
+     * Check if object is null and throw
      *
-     * @param object  - the object to check
-     * @param message - the message to throw
-     * @param <T>     - the object type
+     * @param object  the object to check
+     * @param message the message to throw
+     * @param <T>     the object type
      * @return the object if not null
      */
     public static <T> T checkNotNull(T object, String message) {

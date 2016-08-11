@@ -14,8 +14,8 @@ public class SizeUtils {
     }
 
     /**
-     * @param context - the context
-     * @param dpValue - size in dp
+     * @param context the context
+     * @param dpValue size in dp
      * @return size in pixels
      */
     public static int dpToPx(Context context, float dpValue) {
@@ -24,8 +24,8 @@ public class SizeUtils {
     }
 
     /**
-     * @param context - the context
-     * @param pxValue - size in pixels
+     * @param context the context
+     * @param pxValue size in pixels
      * @return size in dp
      */
     public static int pxToDp(Context context, float pxValue) {
@@ -34,8 +34,8 @@ public class SizeUtils {
     }
 
     /**
-     * @param context - the context
-     * @param spValue - size in sp
+     * @param context the context
+     * @param spValue size in sp
      * @return
      */
     public static int spToPx(Context context, float spValue) {
@@ -44,8 +44,8 @@ public class SizeUtils {
     }
 
     /**
-     * @param context - the context
-     * @param pxValue - size in px
+     * @param context the context
+     * @param pxValue size in px
      * @return size in sp
      */
     public static int pxToSp(Context context, float pxValue) {

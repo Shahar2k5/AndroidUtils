@@ -23,9 +23,9 @@ public class ScreenUtils {
     }
 
     /**
-     * get screen width
+     * Get screen width
      *
-     * @param context - the context
+     * @param context the context
      * @return screen width in pixels
      */
     public static int getScreenWidthInPx(Context context) {
@@ -36,9 +36,9 @@ public class ScreenUtils {
     }
 
     /**
-     * get screen height
+     * Get screen height
      *
-     * @param context - the context
+     * @param context the context
      * @return screen height in pixels
      */
     public static int getScreenHeightInPx(Context context) {
@@ -49,9 +49,9 @@ public class ScreenUtils {
     }
 
     /**
-     * get the screen size
+     * Get the screen size
      *
-     * @param context - some context
+     * @param context some context
      * @return ScreenSize object
      */
     public static ScreenSize getScreenSize(Context context) {
@@ -66,7 +66,7 @@ public class ScreenUtils {
      * MIN API 19
      * should be called when onCreate() starts
      *
-     * @param activity - some activity
+     * @param activity some activity
      */
     public static void setTransparentStatusBar(Activity activity) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
@@ -76,9 +76,9 @@ public class ScreenUtils {
     }
 
     /**
-     * get status bar height
+     * Get status bar height
      *
-     * @param context - the context
+     * @param context the context
      * @return status bar height in pixels
      */
     public static int getStatusBarHeight(Context context) {
@@ -92,9 +92,9 @@ public class ScreenUtils {
     }
 
     /**
-     * check if we have status bar
+     * Check if we have status bar
      *
-     * @param activity - some activity
+     * @param activity some activity
      * @return {@code true} if we have status bar
      */
     public static boolean hasStatusBar(Activity activity) {
@@ -103,9 +103,9 @@ public class ScreenUtils {
     }
 
     /**
-     * get the action bar height
+     * Get the action bar height
      *
-     * @param activity - some activity
+     * @param activity some activity
      * @return action bar height in pixels
      */
     public static int getActionBarHeight(Activity activity) {
@@ -119,7 +119,7 @@ public class ScreenUtils {
     /**
      * take a screenshot
      *
-     * @param activity - the activity to capture
+     * @param activity the activity to capture
      * @return a Bitmap
      */
     public static Bitmap takeScreenShotWithStatusBar(Activity activity) {
@@ -137,7 +137,7 @@ public class ScreenUtils {
     /**
      * take a screenshot without  the status bar
      *
-     * @param activity - the activity to capture
+     * @param activity the activity to capture
      * @return a Bitmap
      */
     public static Bitmap takeScreenShoteWithoutStatusBar(Activity activity) {
@@ -154,9 +154,9 @@ public class ScreenUtils {
     }
 
     /**
-     * check if the screen is locked
+     * Check if the screen is locked
      *
-     * @param context - some context
+     * @param context some context
      * @return {@code true} if the screen is lock
      */
     public static boolean isScreenLocked(Context context) {

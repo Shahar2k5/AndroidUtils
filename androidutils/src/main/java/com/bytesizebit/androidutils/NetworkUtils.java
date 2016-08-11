@@ -18,9 +18,9 @@ public class NetworkUtils {
     }
 
     /**
-     * check if there is an active network
+     * Check if there is an active network
      *
-     * @param context - the context
+     * @param context  the context
      * @return {@code true} for active network
      */
     public static boolean isNetworkAvailable(Context context) {
@@ -30,9 +30,9 @@ public class NetworkUtils {
     }
 
     /**
-     * get the network type
+     * Get the network type
      *
-     * @param context - the context
+     * @param context  the context
      * @return String value network type
      */
     public static String getNetworkType(Context context) {
@@ -45,9 +45,9 @@ public class NetworkUtils {
     }
 
     /**
-     * get the network sub type
+     * Get the network sub type
      *
-     * @param context - the context
+     * @param context  the context
      * @return String value network sub type
      */
     public static String getNetworkSubType(Context context) {
@@ -66,9 +66,9 @@ public class NetworkUtils {
     }
 
     /**
-     * check if connected to cellular provider
+     * Check if connected to cellular provider
      *
-     * @param networkType - the network type
+     * @param networkType  the network type
      * @return {@code true} if connected to cellular provider
      */
     public static boolean isNetworkTypeCellular(String networkType) {
@@ -76,11 +76,11 @@ public class NetworkUtils {
     }
 
     /**
-     * check if network connection has changed
+     * Check if network connection has changed
      *
-     * @param context                - the context
-     * @param prevConnectivityType   - previous network type
-     * @param mPrevConnectionSubType - previous network sub type
+     * @param context                 the context
+     * @param prevConnectivityType    previous network type
+     * @param mPrevConnectionSubType  previous network sub type
      * @return {@code true} if network changed
      */
     public static boolean isNetworkChanged(Context context, String prevConnectivityType, String mPrevConnectionSubType) {
@@ -90,7 +90,7 @@ public class NetworkUtils {
             return false;
         } else if (!prevConnectivityType.equals(connectivityType)) {
             return true;
-        } else if (!mPrevConnectionSubType.equals(connectivitySubType)) //NOTE:: ES - Cases such as wifi changes its ssid or 3G to 4G shifts.
+        } else if (!mPrevConnectionSubType.equals(connectivitySubType))
         {
             return true;
         }
@@ -101,7 +101,7 @@ public class NetworkUtils {
     /**
      * open the wireless network settings
      *
-     * @param context - the context
+     * @param context  the context
      */
     public static void openWirelessNetworkSettings(Context context) {
         if (android.os.Build.VERSION.SDK_INT > 10) {
@@ -112,9 +112,9 @@ public class NetworkUtils {
     }
 
     /**
-     * check if we have a WiFi connection
+     * Check if we have a WiFi connection
      *
-     * @param context - the context
+     * @param context  the context
      * @return {@code true} if connected to WiFi
      */
     public static boolean isWifiConnected(Context context) {
@@ -124,9 +124,9 @@ public class NetworkUtils {
     }
 
     /**
-     * get the operator name
+     * Get the operator name
      *
-     * @param context - the context
+     * @param context  the context
      * @return String with operator name
      */
     public static String getNetworkOperatorName(Context context) {
@@ -136,7 +136,7 @@ public class NetworkUtils {
     }
 
     /**
-     * get the phone type
+     * Get the phone type
      * <pre>
      * PHONE_TYPE_NONE  : 0
      * PHONE_TYPE_GSM   : 1
@@ -144,7 +144,7 @@ public class NetworkUtils {
      * PHONE_TYPE_SIP   : 3
      * <pre/>
      *
-     * @param context - the context
+     * @param context  the context
      * @return int phone type
      */
     public static int getPhoneType(Context context) {

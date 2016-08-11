@@ -30,10 +30,10 @@ public class DateUtils {
     public static final int TU_DAYS = 86400000;
 
     /**
-     * Date to string with long format
+     * Convert Date to string with long format
      *
-     * @param context - some context
-     * @param date    - date to format
+     * @param context some context
+     * @param date    date to format
      * @return {@code String} formatted date
      */
     public static String formatDateLong(Context context, Date date) {
@@ -42,9 +42,9 @@ public class DateUtils {
     }
 
     /**
-     * check if the date is less than 7 days
+     * Check if the date is less than 7 days from now
      *
-     * @param date - date to check
+     * @param date date to check
      * @return {@code true} if the date is less than 7 days
      */
     private static boolean isLessThanOneWeek(Date date) {
@@ -54,9 +54,9 @@ public class DateUtils {
     }
 
     /**
-     * check if the current date is today
+     * Check if the specific date is today
      *
-     * @param date - date to check
+     * @param date date to check
      * @return {@code true} if the date is today
      */
     public static boolean isToday(Date date) {
@@ -64,9 +64,9 @@ public class DateUtils {
     }
 
     /**
-     * Is the specific date yasterday
+     * Is the specific date yesterday
      *
-     * @param date - date to check
+     * @param date date to check
      * @return {@code true} if the date is yesterday
      */
     public static boolean isYesterday(Date date) {
@@ -87,9 +87,9 @@ public class DateUtils {
     }
 
     /**
-     * check for a leap year
+     * Check for a leap year
      *
-     * @param year - the year to check
+     * @param year the year to check
      * @return {@code true} for a leap year
      */
     public static boolean isLeapYear(int year) {
@@ -99,7 +99,7 @@ public class DateUtils {
     /**
      * return date string from milliseconds
      *
-     * @param milliseconds - time in millis
+     * @param milliseconds time in millis
      * @return yyyy-MM-dd HH:mm:ss formatted string
      */
     public static String millisecondsToString(long milliseconds) {
@@ -107,10 +107,10 @@ public class DateUtils {
     }
 
     /**
-     * return date string from milliseconds with a specific format
+     * return a date string from milliseconds with a specific date format
      *
-     * @param milliseconds - time in millis
-     * @param dateFormat   - the format to use
+     * @param milliseconds time in millis
+     * @param dateFormat   the format to use
      * @return date formatted string
      */
     public static String millisecondsToString(long milliseconds, SimpleDateFormat dateFormat) {
@@ -118,9 +118,9 @@ public class DateUtils {
     }
 
     /**
-     * create string from millisecond date
+     * Create time in milliseconds from a formatted string
      *
-     * @param formattedDate - date string in format yyyy-MM-dd HH:mm:ss
+     * @param formattedDate date string in format yyyy-MM-dd HH:mm:ss
      * @return time in milliseconds
      */
     public static long stringToMilliseconds(String formattedDate) {
@@ -128,10 +128,10 @@ public class DateUtils {
     }
 
     /**
-     * create string from millisecond date
+     * Create time in milliseconds from a formatted string with specific date format
      *
-     * @param formattedDate - date string in format yyyy-MM-dd HH:mm:ss
-     * @param dateFormat    - how to format the string
+     * @param formattedDate date string in format yyyy-MM-dd HH:mm:ss
+     * @param dateFormat    how to format the string
      * @return time in milliseconds
      */
     public static long stringToMilliseconds(String formattedDate, SimpleDateFormat dateFormat) {
@@ -144,9 +144,9 @@ public class DateUtils {
     }
 
     /**
-     * create a date from formatted string
+     * Create a date from formatted string
      *
-     * @param formattedDate - the formatted string
+     * @param formattedDate the formatted string
      * @return Date
      */
     public static Date stringToDate(String formattedDate) {
@@ -154,10 +154,10 @@ public class DateUtils {
     }
 
     /**
-     * convert string to Date object
+     * Create a date from formatted string with specific date format
      *
-     * @param formattedDate - string to convert
-     * @param dateFormat    -
+     * @param formattedDate string to convert
+     * @param dateFormat
      * @return {@code Date} Date object from the string value
      */
     public static Date stringToDate(String formattedDate, SimpleDateFormat dateFormat) {
@@ -167,7 +167,7 @@ public class DateUtils {
     /**
      * Create a formatted date
      *
-     * @param date - date to format
+     * @param date date to format
      * @return a yyyy-MM-dd HH:mm:ss formatted string
      */
     public static String dateToString(Date date) {
@@ -175,10 +175,10 @@ public class DateUtils {
     }
 
     /**
-     * Create a formatted date
+     * Create a formatted date with specific date format
      *
-     * @param date       - date to format
-     * @param dateFormat - the Date format to use
+     * @param date       date to format
+     * @param dateFormat the Date format to use
      * @return a date formatted string
      */
     public static String dateToString(Date date, SimpleDateFormat dateFormat) {
@@ -186,9 +186,9 @@ public class DateUtils {
     }
 
     /**
-     * converts date object to milliseconds
+     * Convert date object to milliseconds
      *
-     * @param date - object to convert
+     * @param date object to convert
      * @return long
      */
     public static long dateToMilliseconds(Date date) {
@@ -196,9 +196,9 @@ public class DateUtils {
     }
 
     /**
-     * convert milliseconds to date object
+     * Convert milliseconds to date object
      *
-     * @param milliseconds - time to use
+     * @param milliseconds time to use
      * @return Date
      */
     public static Date millisecondsToDate(long milliseconds) {
@@ -206,10 +206,10 @@ public class DateUtils {
     }
 
     /**
-     * converts milliseconds to specific time unit
+     * Convert milliseconds to specific time unit
      *
-     * @param milliseconds - time in milliseconds
-     * @param timeUnit     - time unit to use
+     * @param milliseconds time in milliseconds
+     * @param timeUnit     time unit to use
      * @return long in Time Unit
      */
     private static long millisecondsToTimeUnit(long milliseconds, int timeUnit) {
@@ -226,7 +226,7 @@ public class DateUtils {
 
 
     /**
-     * get current time in milliseconds
+     * Get current time in milliseconds
      *
      * @return long time in milliseconds
      */
@@ -235,7 +235,7 @@ public class DateUtils {
     }
 
     /**
-     * get current time in formatted string
+     * Get current time in formatted string
      *
      * @return a yyyy-MM-dd HH:mm:ss formatted string
      */
@@ -244,9 +244,9 @@ public class DateUtils {
     }
 
     /**
-     * get formatted string from current time in milliseconds
+     * Get current time in formatted string with specific date format
      *
-     * @param dateFormat - the date format to use
+     * @param dateFormat the date format to use
      * @return String time in milliseconds
      */
     public static String getCurrentTimeString(SimpleDateFormat dateFormat) {
@@ -254,6 +254,8 @@ public class DateUtils {
     }
 
     /**
+     * Get current time in date object
+     *
      * @return a Date object with the current time
      */
     public static Date getCurrentTimeDate() {
@@ -261,10 +263,10 @@ public class DateUtils {
     }
 
     /**
-     * calculate time interval from now
+     * Calculate time interval from now
      *
-     * @param date     - date to compare
-     * @param timeUnit - time unit to get the result
+     * @param date     date to compare
+     * @param timeUnit time unit to get the result
      * @return long time in time unit
      */
     public static long getTimeIntervalFromNow(Date date, int timeUnit) {
@@ -272,10 +274,10 @@ public class DateUtils {
     }
 
     /**
-     * calculate time interval from now
+     * Calculate time interval from now
      *
-     * @param dateString - date to compare
-     * @param timeUnit   - time unit to get the result
+     * @param dateString date to compare
+     * @param timeUnit   time unit to get the result
      * @return long time in time unit
      */
     public static long getTimeIntervalFromNow(String dateString, int timeUnit) {
@@ -284,11 +286,11 @@ public class DateUtils {
 
 
     /**
-     * calculate time interval from now with specific format
+     * Calculate time interval from now with specific format
      *
-     * @param dateString - date to compare
-     * @param timeUnit   - time unit to get the result
-     * @param dateFormat - the format to use
+     * @param dateString date to compare
+     * @param timeUnit   time unit to get the result
+     * @param dateFormat the format to use
      * @return long time in time unit
      */
     public static long getTimeIntervalFromNow(String dateString, int timeUnit, SimpleDateFormat dateFormat) {
@@ -296,11 +298,11 @@ public class DateUtils {
     }
 
     /**
-     * calculate time interval between 2 dates
+     * Calculate time interval between 2 dates
      *
-     * @param dateString1 - first date
-     * @param dateString2 - second date
-     * @param timeUnit    - time unit to get the result
+     * @param dateString1 first date
+     * @param dateString2 second date
+     * @param timeUnit    time unit to get the result
      * @return time in time unit
      */
     public static long getTimeIntervalBetweenDates(String dateString1, String dateString2, int timeUnit) {
@@ -308,12 +310,12 @@ public class DateUtils {
     }
 
     /**
-     * calculate time interval between 2 dates with a specific date format
+     * Calculate time interval between 2 dates with a specific date format
      *
-     * @param dateString1 - first date
-     * @param dateString2 - second date
-     * @param timeUnit    - time unit to get the result
-     * @param dateFormat  - the format used in the dates
+     * @param dateString1 first date
+     * @param dateString2 second date
+     * @param timeUnit    time unit to get the result
+     * @param dateFormat  the format used in the dates
      * @return {@code long} the time interval between two dates
      */
     public static long getTimeIntervalBetweenDates(String dateString1, String dateString2, int timeUnit, SimpleDateFormat dateFormat) {
@@ -322,16 +324,14 @@ public class DateUtils {
     }
 
     /**
-     * calculate time interval between 2 dates
+     * Calculate time interval between 2 dates
      *
-     * @param date1    - first date
-     * @param date2    - second date
-     * @param timeUnit - time unit to get the result
+     * @param date1    first date
+     * @param date2    second date
+     * @param timeUnit time unit to get the result
      * @return {@code long} the time interval between two dates
      */
     public static long getTimeIntervalBetweenDates(Date date1, Date date2, int timeUnit) {
         return millisecondsToTimeUnit(dateToMilliseconds(date2) - dateToMilliseconds(date1), timeUnit);
     }
-
-
 }

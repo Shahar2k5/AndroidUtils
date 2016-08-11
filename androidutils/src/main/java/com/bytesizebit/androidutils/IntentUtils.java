@@ -21,35 +21,35 @@ public class IntentUtils {
     }
 
     /**
-     * makes a call
+     * Makes a call
      *
-     * @param context     - some context
-     * @param phoneNumber - number to call
+     * @param context     some context
+     * @param phoneNumber number to call
      */
     public static void callNumber(Context context, String phoneNumber) {
         openDialerActivityWithAction(context, phoneNumber, Intent.ACTION_CALL);
     }
 
     /**
-     * dial a number in the phone's keypad
+     * Dial a number in the phone's keypad
      *
-     * @param context     - some context
-     * @param phoneNumber - number to dial
+     * @param context     some context
+     * @param phoneNumber number to dial
      */
     public static void dialNumber(Context context, String phoneNumber) {
         openDialerActivityWithAction(context, phoneNumber, Intent.ACTION_DIAL);
     }
 
     /**
-     * open dialer and perform action
+     * Open dialer and perform action
      * <p>
      * Intent.ACTION_DIAL
      * Intent.ACTION_CALL
      * </p>
      *
-     * @param context     - some context
-     * @param phoneNumber - number to dial
-     * @param action      - action to perform
+     * @param context     some context
+     * @param phoneNumber number to dial
+     * @param action      action to perform
      */
     public static void openDialerActivityWithAction(Context context, String phoneNumber, String action) {
         Intent callIntent = new Intent(action);
@@ -69,11 +69,11 @@ public class IntentUtils {
     }
 
     /**
-     * open compose email activity
+     * Open compose email activity
      *
-     * @param context   - some context
-     * @param addresses - email adress to send to
-     * @param subject   - email subject
+     * @param context   some context
+     * @param addresses email adress to send to
+     * @param subject   email subject
      */
     public static void openComposeEmailActivity(Context context, String[] addresses, String subject) {
         Intent intent = new Intent(Intent.ACTION_SENDTO);
@@ -84,11 +84,11 @@ public class IntentUtils {
     }
 
     /**
-     * open SMS activity to send SMS
+     * Open SMS activity to send SMS
      *
-     * @param context     - some context
-     * @param phoneNumber - number to send to
-     * @param body        - the message
+     * @param context     some context
+     * @param phoneNumber number to send to
+     * @param body        the message
      */
     public static void openSendSmsActivity(Context context, String phoneNumber, String body) {
         Intent intent = new Intent(Intent.ACTION_VIEW);
@@ -103,7 +103,7 @@ public class IntentUtils {
     /**
      * Create a WhatsApp share intent
      *
-     * @param body - the text to send
+     * @param body the text to send
      * @return an Intent to share via whatsapp
      */
     public static Intent createWhatsAppShareIntent(String body) {
@@ -116,10 +116,10 @@ public class IntentUtils {
     }
 
     /**
-     * starts an Activity if it is exists
+     * Starts an Activity if it is exists
      *
-     * @param context - the context
-     * @param intent  - the intent to start
+     * @param context the context
+     * @param intent  the intent to start
      */
     private static void startIntentIfPossible(Context context, Intent intent) {
         if (isActivityAvailableForIntent(context, intent)) {
@@ -128,10 +128,10 @@ public class IntentUtils {
     }
 
     /**
-     * check if the is a valid Activity for the intent
+     * Check if there is a valid Activity for the intent
      *
-     * @param context - the context
-     * @param intent  - the intent to test
+     * @param context the context
+     * @param intent  the intent to test
      * @return {@code true} if Activity exists for that Intent
      */
     public static boolean isActivityAvailableForIntent(Context context, Intent intent) {
@@ -139,9 +139,9 @@ public class IntentUtils {
     }
 
     /**
-     * open the playstore page for the current app
+     * Open the playstore page for the current app
      *
-     * @param context - the context
+     * @param context the context
      */
     public static void openPlayStoreAppPage(Context context) {
         final String appPackageName = context.getPackageName(); // getPackageName() from Context or Activity object
@@ -153,10 +153,10 @@ public class IntentUtils {
     }
 
     /**
-     * check if a service is running
+     * Check if a service is running
      *
-     * @param className - service class name
-     * @param context   - some context
+     * @param className service class name
+     * @param context   some context
      * @return {@code true} if service is running
      */
     public static boolean isRunningService(String className, Context context) {

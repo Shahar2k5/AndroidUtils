@@ -15,7 +15,7 @@ public class ValidationUtils {
     /**
      * checks if an email is valid
      *
-     * @param email - the email to check
+     * @param email the email to check
      * @return {@code true} if the email is valid
      */
     public static boolean isValidEmail(String email) {
@@ -25,7 +25,7 @@ public class ValidationUtils {
     /**
      * checks if an IP Address is valid
      *
-     * @param IPAddress - the IP Address to check
+     * @param IPAddress the IP Address to check
      * @return {@code true} if the email is valid
      */
     public static boolean isValidIPAddress(String IPAddress) {
@@ -35,7 +35,7 @@ public class ValidationUtils {
     /**
      * checks if an url is valid
      *
-     * @param url - the url to check
+     * @param url the url to check
      * @return {@code true} if the url is valid
      */
     public static boolean isValidUrl(String url) {

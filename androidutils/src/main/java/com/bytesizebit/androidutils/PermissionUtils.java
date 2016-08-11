@@ -26,7 +26,7 @@ public class PermissionUtils {
     /**
      * opren the app settings screen
      *
-     * @param context - the calling Activity or Fragment.
+     * @param context the calling Activity or Fragment.
      */
     public static void openPermissionsSettings(Context context) {
         if (context == null) {
@@ -43,9 +43,7 @@ public class PermissionUtils {
     }
 
     /**
-     * check if user denied permissions with the flag NEVER ASK AGAIN.
-     * <p/>
-     * NOTE: use of this method is optional, should be called from
+     * Check if user denied permissions with the flag NEVER ASK AGAIN.
      *
      * @param object      the calling Activity or Fragment.
      * @param deniedPerms the set of denied permissions.

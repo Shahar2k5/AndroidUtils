@@ -31,8 +31,8 @@ public class ViewUtils {
     /**
      * scroll listview to bottom
      *
-     * @param listView     - the llistview to scroll
-     * @param smoothScroll - should scroll smooth or snap
+     * @param listView     the llistview to scroll
+     * @param smoothScroll should scroll smooth or snap
      */
     public static void listViewScrollToBottom(final ListView listView, boolean smoothScroll) {
         // due to issue with scrolling in listview doesnt reach the end of the list, this small hack is needed - calling the method twice with small delay in between
@@ -75,7 +75,6 @@ public class ViewUtils {
         textView.setText(ss);
         textView.setMovementMethod(LinkMovementMethod.getInstance());
     }
-
 
 
 }

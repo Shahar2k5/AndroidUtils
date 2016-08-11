@@ -20,9 +20,9 @@ public class EncryptionUtils {
     }
 
     /**
-     * create MD5 String from string
+     * Create MD5 String from string
      *
-     * @param str - the string
+     * @param str the string
      * @return MD5 String
      */
     public static String getMD5String(String str) {
@@ -30,10 +30,10 @@ public class EncryptionUtils {
     }
 
     /**
-     * create MD5 String with salt
+     * Create MD5 String with salt
      *
-     * @param str  - the string
-     * @param salt - salt
+     * @param str  the string
+     * @param salt salt
      * @return MD5 String
      */
     public static String getMD5String(String str, String salt) {
@@ -41,9 +41,9 @@ public class EncryptionUtils {
     }
 
     /**
-     * create MD5 String from byte array
+     * Create MD5 String from byte array
      *
-     * @param bytes - byte array
+     * @param bytes byte array
      * @return MD5 String
      */
     public static String getMD5String(byte[] bytes) {
@@ -51,10 +51,10 @@ public class EncryptionUtils {
     }
 
     /**
-     * create MD5 String from byte array with salt
+     * Create MD5 String from byte array with salt
      *
-     * @param bytes - byte array
-     * @param salt  - salt
+     * @param bytes byte array
+     * @param salt  salt
      * @return MD5 String
      */
     public static String getMD5String(byte[] bytes, byte[] salt) {
@@ -65,7 +65,7 @@ public class EncryptionUtils {
     }
 
     /**
-     * encrypt byte array
+     * Encrypt byte array
      *
      * @param bytes bytes to encrypt
      * @return encrypted byte array if available
@@ -82,9 +82,9 @@ public class EncryptionUtils {
     }
 
     /**
-     * create a MD5 String from file path
+     * Create a MD5 String from file path
      *
-     * @param filePath - path to a file
+     * @param filePath path to a file
      * @return {@code String} MD5 string
      */
     public static String getMD5File(String filePath) {
@@ -92,9 +92,9 @@ public class EncryptionUtils {
     }
 
     /**
-     * create a MD5 String from file
+     * Create a MD5 String from file
      *
-     * @param file - file to get MD5 from
+     * @param file file to get MD5 from
      * @return MD5 String
      */
     public static String getMD5File(File file) {
@@ -120,9 +120,9 @@ public class EncryptionUtils {
     }
 
     /**
-     * get SHA1 from String
+     * Get SHA1 from String
      *
-     * @param str - String to get SHA1 from
+     * @param str String to get SHA1 from
      * @return SHA1 string
      */
     public static String getSHA(String str) {
@@ -130,9 +130,9 @@ public class EncryptionUtils {
     }
 
     /**
-     * get SHA1 from byte array
+     * Get SHA1 from byte array
      *
-     * @param bytes - bytes to get SHA1 from
+     * @param bytes bytes to get SHA1 from
      * @return SHA1 String
      */
     public static String getSHA(byte[] bytes) {
@@ -140,9 +140,9 @@ public class EncryptionUtils {
     }
 
     /**
-     * encrypt SHA1
+     * Encrypt SHA1
      *
-     * @param bytes - bytes to encrypt
+     * @param bytes bytes to encrypt
      * @return an SHA1 encrypted byte array
      */
     public static byte[] encryptSHA(byte[] bytes) {
@@ -157,9 +157,9 @@ public class EncryptionUtils {
     }
 
     /**
-     * convert bytes to Hex
+     * Convert bytes to Hex
      *
-     * @param src - byte array to convert
+     * @param src byte array to convert
      * @return String from converted byte array
      */
     public static String bytesToHex(byte[] src) {

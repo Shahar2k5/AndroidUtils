@@ -18,7 +18,7 @@ public class KeyboardUtils {
     }
 
     /**
-     * hide soft keyboard
+     * Hide soft keyboard
      */
     public static void hideSoftKeyboard(Activity activity) {
         View view = activity.getWindow().peekDecorView();
@@ -30,7 +30,7 @@ public class KeyboardUtils {
     }
 
     /**
-     * hide soft keyboard
+     * Hide soft keyboard
      */
     public static void hideSoftKeyboard(Context context, View view) {
         view.clearFocus();
@@ -40,14 +40,14 @@ public class KeyboardUtils {
     }
 
     /**
-     * show soft keyboard
+     * Show soft keyboard
      */
     public static void showSoftKeyboard(Activity activity) {
         showSoftKeyboard(activity, null);
     }
 
     /**
-     * show soft keyboard
+     * Show soft keyboard
      */
     public static void showSoftKeyboard(Context context, View view) {
         view.setFocusable(true);
@@ -59,7 +59,7 @@ public class KeyboardUtils {
     }
 
     /**
-     * toggle soft keyboard state
+     * Toggle soft keyboard state
      */
     public static void toggleKeyboradState(Context context, EditText edit) {
         edit.setFocusable(true);

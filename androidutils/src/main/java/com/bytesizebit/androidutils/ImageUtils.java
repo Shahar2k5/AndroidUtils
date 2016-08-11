@@ -33,10 +33,10 @@ public class ImageUtils {
     private static final int MAX_BITMAP_HEIGHT = 640;
 
     /**
-     * create a Bitmap from URI
+     * Create a Bitmap from URI
      *
-     * @param context - the context
-     * @param uri     - the uri to load from
+     * @param context  the context
+     * @param uri      the uri to load from
      * @return a Bitmap
      */
     @Nullable
@@ -51,11 +51,11 @@ public class ImageUtils {
     }
 
     /**
-     * get file system path from a URI
+     * Get file system path from a URI
      *
-     * @param context    - the context
-     * @param contentURI - uri to load from
-     * @return String - path to the actual file
+     * @param context     the context
+     * @param contentURI  uri to load from
+     * @return String  path to the actual file
      */
     public static String getRealPathFromURI(Context context, Uri contentURI) {
         String result;
@@ -72,10 +72,10 @@ public class ImageUtils {
     }
 
     /**
-     * normlize a bitmap
+     * Normalize a bitmap to 640px
      *
-     * @param context       - the context
-     * @param selectedImage - uri for the selected image
+     * @param context        the context
+     * @param selectedImage  uri for the selected image
      * @return {@code Bitmap} from the selected uri image
      */
     public static Bitmap normalize(Context context, Uri selectedImage) {
@@ -83,10 +83,10 @@ public class ImageUtils {
     }
 
     /**
-     * normlize a bitmap
+     * Normalize a bitmap to specific size
      *
-     * @param context       - the context
-     * @param selectedImage - uri for the selected image
+     * @param context        the context
+     * @param selectedImage  uri for the selected image
      * @return
      */
     public static Bitmap normalize(Context context, Uri selectedImage, int maxWidth, int maxHeight) {
@@ -97,11 +97,11 @@ public class ImageUtils {
     }
 
     /**
-     * get image rotated by degree from metedata
+     * Get image rotated by degree from metedata
      *
-     * @param context - the context
-     * @param bitmap  - the bitmap to check
-     * @param src     - the uri of the image
+     * @param context  the context
+     * @param bitmap   the bitmap to check
+     * @param src      the uri of the image
      * @return a rotated Bitmap
      */
     public static Bitmap getImageRotatedByMetadata(Context context, Bitmap bitmap, Uri src) {
@@ -157,15 +157,15 @@ public class ImageUtils {
 
 
     /**
-     * create a fullscreen image and punch a hole inside
+     * Create a fullscreen image and punch a hole inside
      *
-     * @param context         - some context
-     * @param screenWidth     - the screen width
-     * @param screenHeight    - the screen height
-     * @param x               - x coordinate of the hole
-     * @param y               - y coordinate of the hole
-     * @param holeDiameter    - hole width
-     * @param backgroundColor - the background color to use
+     * @param context          some context
+     * @param screenWidth      the screen width
+     * @param screenHeight     the screen height
+     * @param x                x coordinate of the hole
+     * @param y                y coordinate of the hole
+     * @param holeDiameter     hole width
+     * @param backgroundColor  the background color to use
      * @return
      */
     public static Bitmap punchARoundedHoleInABitmap(Context context, int screenWidth, int screenHeight, int x, int y, int holeDiameter, int backgroundColor) {
