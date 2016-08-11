@@ -18,6 +18,13 @@ import android.widget.TextView;
  * www.bytesizebit.com
  ***********/
 public class ViewUtils {
+
+    /**
+     * Set visibility to sibling views
+     *
+     * @param view       current view
+     * @param visibility visibility state
+     */
     public static void setSiblingsVisibility(View view, int visibility) {
         ViewGroup parent = (ViewGroup) view.getParent();
         for (int i = 0; i < parent.getChildCount(); i++) {
@@ -29,9 +36,9 @@ public class ViewUtils {
     }
 
     /**
-     * scroll listview to bottom
+     * Scroll listview to bottom
      *
-     * @param listView     the llistview to scroll
+     * @param listView     the listview to scroll
      * @param smoothScroll should scroll smooth or snap
      */
     public static void listViewScrollToBottom(final ListView listView, boolean smoothScroll) {
@@ -65,6 +72,12 @@ public class ViewUtils {
         }
     }
 
+    /**
+     * Create an underline text clickable
+     *
+     * @param textView the view to handle
+     * @param onclick  the click callback
+     */
     public static void makeUnderlinedTextClickable(TextView textView, ClickableSpan onclick) {
         SpannedString string = (SpannedString) textView.getText();
         int underlineStart = string.nextSpanTransition(0, string.length(), UnderlineSpan.class);

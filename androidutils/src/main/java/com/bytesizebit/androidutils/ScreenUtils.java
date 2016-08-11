@@ -62,7 +62,7 @@ public class ScreenUtils {
     }
 
     /**
-     * set transparent status bar
+     * Set transparent status bar
      * MIN API 19
      * should be called when onCreate() starts
      *
@@ -117,7 +117,7 @@ public class ScreenUtils {
     }
 
     /**
-     * take a screenshot
+     * Take a screenshot with the status bar
      *
      * @param activity the activity to capture
      * @return a Bitmap
@@ -135,7 +135,7 @@ public class ScreenUtils {
     }
 
     /**
-     * take a screenshot without  the status bar
+     * Take a screenshot without the status bar
      *
      * @param activity the activity to capture
      * @return a Bitmap

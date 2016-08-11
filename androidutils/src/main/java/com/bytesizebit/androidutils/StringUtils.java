@@ -84,7 +84,7 @@ public class StringUtils {
     }
 
     /**
-     * capital only first letter
+     * Capital only first letter
      *
      * @param original  the string to change
      * @return a String with first capital letter

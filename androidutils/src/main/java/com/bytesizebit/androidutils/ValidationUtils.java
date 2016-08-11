@@ -13,7 +13,7 @@ public class ValidationUtils {
     }
 
     /**
-     * checks if an email is valid
+     * Check if an email is valid
      *
      * @param email the email to check
      * @return {@code true} if the email is valid
@@ -23,7 +23,7 @@ public class ValidationUtils {
     }
 
     /**
-     * checks if an IP Address is valid
+     * Check if an IP Address is valid
      *
      * @param IPAddress the IP Address to check
      * @return {@code true} if the email is valid
@@ -33,7 +33,7 @@ public class ValidationUtils {
     }
 
     /**
-     * checks if an url is valid
+     * Check if a url is valid
      *
      * @param url the url to check
      * @return {@code true} if the url is valid

@@ -14,6 +14,8 @@ public class SizeUtils {
     }
 
     /**
+     * Convert DP to PX
+     *
      * @param context the context
      * @param dpValue size in dp
      * @return size in pixels
@@ -24,6 +26,8 @@ public class SizeUtils {
     }
 
     /**
+     * Convert PX to DP
+     *
      * @param context the context
      * @param pxValue size in pixels
      * @return size in dp
@@ -34,6 +38,8 @@ public class SizeUtils {
     }
 
     /**
+     * Convert SP to PX
+     *
      * @param context the context
      * @param spValue size in sp
      * @return
@@ -44,6 +50,8 @@ public class SizeUtils {
     }
 
     /**
+     * Convert PX to SP
+     *
      * @param context the context
      * @param pxValue size in px
      * @return size in sp

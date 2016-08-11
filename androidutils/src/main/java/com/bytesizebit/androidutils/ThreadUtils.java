@@ -15,7 +15,7 @@ public class ThreadUtils {
     }
 
     /**
-     * makes the thread sleep for some time
+     *  Makes the thread sleep for some time
      *
      * @param millis time to sleep in millis
      */

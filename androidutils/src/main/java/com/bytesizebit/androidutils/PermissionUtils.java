@@ -24,7 +24,7 @@ public class PermissionUtils {
     public static final int RC_CONTACT_PERM = 14;
 
     /**
-     * opren the app settings screen
+     * Open the app settings to enable permissions
      *
      * @param context the calling Activity or Fragment.
      */

@@ -11,7 +11,7 @@ import java.lang.reflect.Field;
 public class ResourcesUtils {
 
     /**
-     * load resource id by name
+     * Load resource id by name
      *
      * @param resName the name of the resource
      * @param c       some clazz
