@@ -3,9 +3,24 @@ Lots of Android utils every project should have
 
 ## Usage
 
+Add jcenter to your project's gradle file
+
+```
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+```
+
+
 #### Gradle
 
-`compile 'com.github.shahar2k5:androidutils:1.0.0'`
+
+```
+compile 'com.github.shahar2k5:androidutils:1.0.0'
+```
+
 
 #### Maven
 ```
