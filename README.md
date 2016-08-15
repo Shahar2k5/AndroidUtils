@@ -18,16 +18,17 @@ allprojects {
 
 
 ```
-compile 'com.github.shahar2k5:androidutils:1.0.0'
+compile 'com.github.shahar2k5:androidutils:1.0.1'
 ```
 
 
 #### Maven
 ```
 <dependency>
-    <groupId>com.github.shahar2k5</groupId>
-    <artifactId>androidutils</artifactId>
-    <version>1.0.0</version>
+  <groupId>com.github.shahar2k5</groupId>
+  <artifactId>androidutils</artifactId>
+  <version>1.0.1</version>
+  <type>pom</type>
 </dependency>
 ```
 
