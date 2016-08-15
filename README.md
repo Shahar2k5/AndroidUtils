@@ -1,19 +1,55 @@
 # AndroidUtils
 Lots of Android utils every project should have
 
-## Usage
+## Quick start
+
+Add jcenter to your project's gradle file
+
+```
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+```
 
 #### Gradle
 
-`compile 'com.github.shahar2k5:androidutils:1.0.0'`
+
+```
+compile 'com.github.shahar2k5:androidutils:1.0.1'
+```
+
 
 #### Maven
 ```
 <dependency>
-    <groupId>com.github.shahar2k5</groupId>
-    <artifactId>androidutils</artifactId>
-    <version>1.0.0</version>
+  <groupId>com.github.shahar2k5</groupId>
+  <artifactId>androidutils</artifactId>
+  <version>1.0.1</version>
+  <type>pom</type>
 </dependency>
+```
+
+## Usage 
+
+A few examples on how to use the library
+
+```
+        int sizeInPixels = SizeUtils.dpToPx(this, 20);
+        
+        boolean hasNetwork = NetworkUtils.isNetworkAvailable(this);
+       
+        ViewUtils.listViewScrollToBottom(listView, true);
+       
+        IntentUtils.openPlayStoreAppPage(this);
+
+        DialogUtils.showOkDialog(this, dialogTitle, dialogMessage, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                // do something when the OK button was clicked
+            }
+        });
 ```
 
 ## API
@@ -49,9 +85,9 @@ Lots of Android utils every project should have
 #### » [EncryptionUtils](androidutils/src/main/java/com/bytesizebit/androidutils/EncryptionUtils.java)
 
 + Create MD5 String from string -> `getMD5String`
-+ Create MD5 String with salt -> `dismissDialogSafely`
-+ Create MD5 String from byte array -> `dismissDialogSafely`
-+ Create MD5 String from byte array with salt -> `dismissDialogSafely`
++ Create MD5 String with salt -> `getMD5String`
++ Create MD5 String from byte array -> `getMD5String`
++ Create MD5 String from byte array with salt -> `getMD5String`
 + Encrypt byte array -> `encryptMD5`
 + Create a MD5 String from file path -> `getMD5File`
 + Create a MD5 String from file -> `getMD5File`
@@ -71,7 +107,7 @@ Lots of Android utils every project should have
 
 #### » [IntentUtils](androidutils/src/main/java/com/bytesizebit/androidutils/IntentUtils.java)
 
-+ Makes a call -> `callNumber
++ Makes a call -> `callNumber`
 + Dial a number in the phone's keypad -> `dialNumber`
 + Open compose email activity -> `openComposeEmailActivity`
 + Open SMS activity to send SMS -> `openSendSmsActivity`
@@ -172,3 +208,4 @@ Lots of Android utils every project should have
 ---
 
 ## [License](LICENSE)
+
