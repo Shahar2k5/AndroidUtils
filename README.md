@@ -1,7 +1,7 @@
 # AndroidUtils
 Lots of Android utils every project should have
 
-## Usage
+## Quick start
 
 Add jcenter to your project's gradle file
 
@@ -12,7 +12,6 @@ allprojects {
     }
 }
 ```
-
 
 #### Gradle
 
@@ -30,6 +29,27 @@ compile 'com.github.shahar2k5:androidutils:1.0.1'
   <version>1.0.1</version>
   <type>pom</type>
 </dependency>
+```
+
+## Usage 
+
+A few examples on how to use the library
+
+```
+        int sizeInPixels = SizeUtils.dpToPx(this, 20);
+        
+        boolean hasNetwork = NetworkUtils.isNetworkAvailable(this);
+       
+        ViewUtils.listViewScrollToBottom(listView, true);
+       
+        IntentUtils.openPlayStoreAppPage(this);
+
+        DialogUtils.showOkDialog(this, dialogTitle, dialogMessage, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                // do something when the OK button was clicked
+            }
+        });
 ```
 
 ## API
@@ -87,7 +107,7 @@ compile 'com.github.shahar2k5:androidutils:1.0.1'
 
 #### » [IntentUtils](androidutils/src/main/java/com/bytesizebit/androidutils/IntentUtils.java)
 
-+ Makes a call -> `callNumber
++ Makes a call -> `callNumber`
 + Dial a number in the phone's keypad -> `dialNumber`
 + Open compose email activity -> `openComposeEmailActivity`
 + Open SMS activity to send SMS -> `openSendSmsActivity`
@@ -188,3 +208,4 @@ compile 'com.github.shahar2k5:androidutils:1.0.1'
 ---
 
 ## [License](LICENSE)
+
