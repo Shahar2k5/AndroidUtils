@@ -85,9 +85,9 @@ A few examples on how to use the library
 #### » [EncryptionUtils](androidutils/src/main/java/com/bytesizebit/androidutils/EncryptionUtils.java)
 
 + Create MD5 String from string -> `getMD5String`
-+ Create MD5 String with salt -> `dismissDialogSafely`
-+ Create MD5 String from byte array -> `dismissDialogSafely`
-+ Create MD5 String from byte array with salt -> `dismissDialogSafely`
++ Create MD5 String with salt -> `getMD5String`
++ Create MD5 String from byte array -> `getMD5String`
++ Create MD5 String from byte array with salt -> `getMD5String`
 + Encrypt byte array -> `encryptMD5`
 + Create a MD5 String from file path -> `getMD5File`
 + Create a MD5 String from file -> `getMD5File`
